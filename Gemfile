@@ -58,6 +58,7 @@ gem 'figaro', '1.0'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+gem 'faker'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
