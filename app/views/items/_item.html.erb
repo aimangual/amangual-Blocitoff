@@ -1,10 +1,12 @@
 <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
 
   <div class='media-body'>
-    <h6>
       <%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
-      <%= item.name %>
-      <%= item.days_left %> days remaining to complete task.
-    </h6>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge"> Days Remaining: <%= item.days_left %></span>
+          <%= item.name %>
+        </li>
+      </ul>
   </div>
 <% end %>
