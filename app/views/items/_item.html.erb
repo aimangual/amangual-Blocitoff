@@ -4,6 +4,7 @@
     <h6>
       <%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
       <%= item.name %>
+      <%= item.days_left %> days remaining to complete task.
     </h6>
   </div>
 <% end %>
